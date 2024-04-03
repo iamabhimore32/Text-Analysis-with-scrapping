@@ -1,0 +1,36 @@
+
+
+Approach and Explanation:
+
+1.Extracting Article Text from URL:
+    - We'll use a Python library like `requests` to fetch the HTML content of the webpage.
+    - Then, we'll use `BeautifulSoup` to parse the HTML and extract the relevant article text (usually within `<p>` tags).
+
+2. Text Analysis:
+    - We'll perform various text analysis tasks on the extracted article text.
+    - The NLTK library will be helpful for tasks like tokenization, sentence splitting, and calculating readability metrics.
+
+3. Output Variables:
+    - We'll compute the following output variables:
+        - Positive Score: Sentiment score indicating positive sentiment.
+        - Negative Score: Sentiment score indicating negative sentiment.
+        - Polarity Score: Overall sentiment polarity (positive, negative, or neutral).
+        - Subjectivity Score: Measure of how subjective the text is.
+        - Average Sentence Length: Average number of words per sentence.
+        - Percentage of Complex Words: Ratio of complex words to total words.
+        - FOG Index: Readability index based on sentence length and complex words.
+        - Average Number of Words per Sentence: Self-explanatory.
+        - Complex Word Count: Number of complex words.
+        - Word Count: Total number of words.
+        - Syllables per Word: Average number of syllables per word.
+        - Personal Pronouns: Count of personal pronouns (e.g., "I," "you," "he," etc.).
+        - Average Word Length: Self-explanatory.
+
+Dependencies:
+
+1. Python Libraries:
+    -requests`: For making HTTP requests to fetch webpage content.
+    -BeautifulSoup`: For parsing HTML content.
+    -nltk`: For natural language processing tasks (tokenization, sentiment analysis, etc.).
+    -pandas`: For data manipulation (optional, if you want to store results in a DataFrame).
+
